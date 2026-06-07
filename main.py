@@ -9,10 +9,6 @@ def main():
     reader = CSVReader()
     records = reader.read_csv(filename)
 
-    print(records[0].student_name)
-    print(records[0].term)
-    print(records[0].status)
-
     processor = AttendanceProcessor()
     summary = processor.generate_summary(records)
 
